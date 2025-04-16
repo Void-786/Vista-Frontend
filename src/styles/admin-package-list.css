@@ -1,0 +1,223 @@
+/* Admin Package List Styles */
+.package-list-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 65px;
+    text-align: center;
+  }
+  
+  .package-list-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .package-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .package-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .package-item span {
+    font-size: 16px;
+  }
+  
+  .package-button-edit,
+  .button-delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .package-button-edit {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .package-button-edit:hover {
+    background-color: #45a049;
+  }
+  
+  .package-button-delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .package-button-delete:hover {
+    background-color: #e53935;
+  }
+  
+  .error {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Edit Package Form */
+  .edit-package-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-package-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  .form-field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .form-field textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .itinerary-fields {
+    margin-top: 20px;
+  }
+  
+  .itinerary-fields h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .itinerary-day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .add-day-button {
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-day-button:hover {
+    background-color: #1e88e5;
+  }
+
+  .remove-day-button {
+    background-color: #ef4444; /* Danger red color */
+    color: #fff; /* White text */
+    font-weight: bold; /* Bold text */
+    font-size: 0.875rem; /* Slightly smaller font size */
+    padding: 6px 12px; /* Padding for a comfortable click area */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .remove-day-button:hover {
+    background-color: #dc2626; /* Darker red on hover */
+  }
+  
+  .package-button-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the button */
+    margin-top: 20px; /* Add some space above the button */
+  }
+  
+  .package-button-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .package-button-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Delete Confirmation Modal */
+  .delete-confirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .confirm-button,
+  .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirm-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .confirm-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e53935;
+  }

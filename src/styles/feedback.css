@@ -1,0 +1,145 @@
+.feedback-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.feedback-subtitle {
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feedback-card {
+  background: var(--background);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  position: relative;
+  margin: 10px;
+  transition: all 0.3s ease;
+  width: 300px;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.star.filled {
+  color: #7D0A0A;
+}
+
+.date {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.feedback-content {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.feedback-content p {
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  color: #7D0A0A;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.feedback-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-dot.active {
+  background-color: #7D0A0A;
+}
+
+@media (max-width: 768px) {
+  .feedback-section {
+    padding: 3rem 1rem;
+  }
+
+  .feedback-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.feedback-section .rating-stars {
+  color: #7D0A0A;
+}
+
+.feedback-section .submit-btn {
+  background-color: #7D0A0A;
+}
+
+.feedback-section .submit-btn:hover {
+  background-color: #BF3131;
+}

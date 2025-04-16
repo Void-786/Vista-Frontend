@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+
+.add-package-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #EEEEEE;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-package-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px; 
+  font-size: 16px;
+  transition: border-color .3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #7D0A0A;
+}
+
+.submit-button,
+.add-itinerary-button { 
+    display: inline-block; 
+    padding: 12px 20px; 
+    background-color: #7D0A0A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.submit-button:hover,
+.add-itinerary-button:hover {
+    background-color:#BF3131 ;
+}
+
+.add-package-form div {
+    background-color: #f9f9f9;
+    padding:15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex; 
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}

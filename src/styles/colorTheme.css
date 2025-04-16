@@ -1,0 +1,107 @@
+/* Color Theme for Car Rental Services */
+
+:root {
+  /* Primary Colors */
+  --primary: #7D0A0A;      /* Dark Red - Main brand color */
+  --secondary: #BF3131;    /* Medium Red - Secondary color */
+  --accent: #7D0A0A;       /* Changed from Beige/Gold to Primary color */
+  --background: #EEEEEE;   /* Light Gray - Background color */
+  
+  /* Text Colors */
+  --text-dark: #333333;
+  --text-medium: #666666;
+  --text-light: #EEEEEE;
+  
+  /* Functional Colors */
+  --success: #28a745;
+  --error: #dc3545;
+  --warning: #7D0A0A;      /* Changed from gold to primary color */
+  --info: #17a2b8;
+  
+  /* UI Elements */
+  --border-color: var(--secondary);
+  --input-border: #dddddd;
+  --input-focus: var(--primary);
+  --shadow-color: rgba(125, 10, 10, 0.2);
+  
+  /* Transparency Variants */
+  --primary-10: rgba(125, 10, 10, 0.1);
+  --primary-20: rgba(125, 10, 10, 0.2);
+  --primary-50: rgba(125, 10, 10, 0.5);
+  --secondary-10: rgba(191, 49, 49, 0.1);
+  --secondary-20: rgba(191, 49, 49, 0.2);
+  --accent-10: rgba(234, 209, 150, 0.1);
+  --accent-20: rgba(234, 209, 150, 0.2);
+}
+
+/* Utility Classes */
+.bg-primary { background-color: var(--primary) !important; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.bg-background { background-color: var(--background) !important; }
+
+.text-primary { color: var(--primary) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.text-accent { color: var(--accent) !important; }
+.text-light { color: var(--text-light) !important; }
+.text-dark { color: var(--text-dark) !important; }
+
+.border-primary { border-color: var(--primary) !important; }
+.border-secondary { border-color: var(--secondary) !important; }
+.border-accent { border-color: var(--accent) !important; }
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+/* Override any white backgrounds with our background variable */
+[style*="background-color: white"],
+[style*="background-color: #fff"],
+[style*="background-color: #ffffff"],
+[style*="background: white"],
+[style*="background: #fff"],
+[style*="background: #ffffff"] {
+  background-color: var(--background) !important;
+}
+
+/* Additional general rules to replace white with background color */
+.bg-white, 
+.background-white,
+.white-bg {
+  background-color: var(--background) !important;
+}
+
+/* Set default background for common elements that often use white */
+.card,
+.modal-content,
+.dropdown-menu,
+.popover,
+.tooltip-inner {
+  background-color: var(--background);
+}
+
+[style*="color: blue"],
+[style*="color: #007bff"],
+[style*="color: #0000ff"] {
+  color: var(--primary) !important;
+} 

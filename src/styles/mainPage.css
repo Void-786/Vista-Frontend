@@ -1,0 +1,71 @@
+/* MainPage.css or App.css */
+
+/* General Styles for Sections */
+#home,
+#packages,
+#cars,
+#query,
+#contact {
+  padding: 2rem; /* General padding for all sections */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #home,
+  #packages,
+  #cars,
+  #query,
+  #contact {
+    padding: 1.5rem; /* Reduced padding for medium screens */
+  }
+
+  .main-title {
+    font-size: 1.75rem; /* Adjust title font size */
+    text-align: center; /* Center align title for better appearance */
+  }
+}
+
+@media (max-width: 768px) {
+  #home,
+  #packages,
+  #cars,
+  #query,
+  #contact {
+    padding: 1rem; /* Further reduced padding for smaller screens */
+    text-align: center; /* Center align text for mobile view */
+  }
+
+  .main-title {
+    font-size: 1.5rem; /* Smaller title font size */
+    line-height: 1.2; /* Adjust line height for readability */
+  }
+
+  .query-section {
+    padding: 1rem; /* Adjust padding specifically for query section */
+    margin: 1rem auto; /* Center query section with margin */
+    max-width: 90%; /* Limit width on smaller screens */
+  }
+
+  .form-section {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center align form elements */
+    gap: 1rem; /* Space between form elements */
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.25rem; /* Even smaller title font size for mobile */
+    margin-bottom: .5rem; /* Adjust margin for compactness */
+    padding-left: .5rem; /* Add some padding to the left */
+    padding-right: .5rem; /* Add some padding to the right */
+  }
+
+  .query-section {
+    padding: .5rem; /* Less padding on very small screens */
+    margin-top: .5rem; /* Adjust margin for spacing */
+    margin-bottom: .5rem; /* Adjust margin for spacing */
+  }
+}

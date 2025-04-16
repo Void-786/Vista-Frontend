@@ -1,0 +1,78 @@
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.landing-sections {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Ensure better spacing for small screens */
+#home {
+  margin-top: -64px; /* Offset navbar height */
+}
+
+#query {
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.form-section {
+  width: 90%;
+  max-width: 500px; /* Prevents stretching on larger screens */
+}
+
+h2.main-title {
+  font-size: 1.8rem; /* Adjust title size for smaller screens */
+}
+
+#cars, #packages, #contact {
+  padding: 2rem 1rem;
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Responsive text */
+h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Scales dynamically */
+}
+
+/* Remove any potential margins that might cause gaps */
+.section > div {
+  margin: 0;
+  width: 100%;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .form-section {
+    width: 95%;
+  }
+
+  h2.main-title {
+    font-size: 1.5rem;
+  }
+}

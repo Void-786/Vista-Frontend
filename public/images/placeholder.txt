@@ -1,0 +1,12 @@
+This directory contains background images for the car rental website. Please add the following high-quality images:
+
+1. luxury-car-1.jpg - A modern luxury sedan (e.g., Mercedes S-Class or BMW 7 Series) in a dramatic urban setting
+2. luxury-car-2.jpg - A high-end sports car (e.g., Porsche or Ferrari) on a scenic mountain road
+3. luxury-car-3.jpg - A premium SUV (e.g., Range Rover or Bentley Bentayga) in an elegant setting
+
+Image requirements:
+- High resolution (minimum 1920x1080)
+- Professional photography
+- Good lighting and composition
+- Landscape orientation
+- No watermarks

@@ -1,0 +1,34 @@
+`<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/safari-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7D0A0A" />
+    <title>Car Rental Services</title>
+    <style>
+      /* Apply color scheme to entire document */
+      :root {
+        --primary: #7D0A0A;
+        --secondary: #BF3131;
+        --accent: #EAD196;
+        --background: #EEEEEE;
+      }
+      
+      html, body {
+        background-color: var(--background) !important;
+        color: #333 !important;
+      }
+      
+      /* Override any default browser styles */
+      button, input[type="button"], input[type="submit"] {
+        background-color: var(--primary) !important;
+        color: var(--background) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

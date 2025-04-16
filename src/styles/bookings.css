@@ -1,0 +1,266 @@
+.bookings-container {
+  padding: 60px 8% 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.bookings-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bookings-header:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b6b, #ff9f43);
+  margin: 25px auto 0;
+  border-radius: 2px;
+}
+
+.bookings-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.bookings-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bookings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bookings-content section {
+  margin-bottom: 50px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.bookings-content h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.bookings-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #4CAF50;
+}
+
+.booking-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.booking-method {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-method h3 {
+  font-size: 1.3rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.booking-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.booking-info ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.booking-info li {
+  margin-bottom: 8px;
+}
+
+.refund-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.refund-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.refund-row.header {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.refund-cell {
+  padding: 12px 15px;
+  flex: 1;
+}
+
+.refund-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.transparency-section {
+  background-color: #f0f7f0;
+}
+
+/* Decorative elements */
+.booking-section:before {
+  content: "📚";
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  font-size: 28px;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section:before {
+  content: "💳";
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  font-size: 28px;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.refund-section:before {
+  content: "🔄";
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  font-size: 28px;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transparency-section:before {
+  content: "✨";
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  font-size: 28px;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom decoration */
+.bookings-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #f8f9fa;
+  z-index: -1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .bookings-container {
+    padding: 40px 5%;
+  }
+  
+  .bookings-header h1 {
+    font-size: 2rem;
+  }
+  
+  .bookings-content section {
+    padding: 20px;
+  }
+  
+  .refund-row {
+    flex-direction: column;
+  }
+  
+  .refund-cell {
+    padding: 10px;
+  }
+  
+  .refund-row.header .refund-cell:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 480px) {
+  .bookings-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .bookings-content h2 {
+    font-size: 1.5rem;
+  }
+}
