@@ -25,7 +25,7 @@ const AddCar: React.FC = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post(
+      await axios.post(
           `${apiClient}/cars/admin/add/new-car`,
           formData,
           { headers: { Authorization: `Bearer ${token}` } }

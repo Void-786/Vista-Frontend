@@ -20,7 +20,7 @@ const AddPlace: React.FC = () => {
         }
         try {
           const token = localStorage.getItem('token');
-          const response = await axios.post(
+          await axios.post(
             `${apiClient}/places/admin/add/new-place`,
             formData,
             {

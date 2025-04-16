@@ -6,7 +6,6 @@ import {
   FaHeart,
   FaMountain,
   FaMoneyBillWave,
-  FaHistory,
   FaCarSide,
 } from "react-icons/fa";
 import "../styles/whoWeAre.css";

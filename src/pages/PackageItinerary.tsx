@@ -207,7 +207,7 @@ const PackageItinerary: React.FC = () => {
         </p>
         
         <div className="timeline">
-          {selectedPackage?.itinerary.map((day, index) => (
+          {selectedPackage?.itinerary.map((day) => (
             <div key={day.day} className="timeline-item">
               <div className="day-marker">Day {day.day}</div>
               <div className="timeline-content">
