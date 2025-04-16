@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
+    const handleClickOutside = (e : any) => {
       if (mobileMenuOpen && !e.target.closest('.navbar')) {
         setMobileMenuOpen(false);
       }

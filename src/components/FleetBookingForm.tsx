@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/fleetBooking.css';
-import { FaMapMarkerAlt, FaCalendarAlt, FaPhone } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 const FleetBookingForm: React.FC = () => {
   const [tripType, setTripType] = useState('roundTrip');

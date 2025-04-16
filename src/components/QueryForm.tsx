@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { FaCalendarAlt, FaUser, FaInfoCircle, FaEnvelope, FaArrowUp, FaPaperPlane } from 'react-icons/fa';
+import { FaCalendarAlt, FaUser, FaEnvelope, FaArrowUp, FaPaperPlane } from 'react-icons/fa';
 import '../styles/queryForm.css';
 import axios from 'axios';
 import apiClient from '../api/apiClient';
 
 const QueryForm: React.FC = () => {
-  const [selectedCities, setSelectedCities] = useState([]);
+  const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [formData, setFormData] = useState({
     startDate: '',
     endDate: '',
@@ -18,9 +18,9 @@ const QueryForm: React.FC = () => {
     phone: '',
   });
 
-  const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error' or null
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null); // 'success' or 'error' or null
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Log the form data to the console before sending it
@@ -28,7 +28,7 @@ const QueryForm: React.FC = () => {
     console.log("Selected Cities being sent:", selectedCities);
 
     try {
-      const response = await axios.post(`${apiClient}/query/submit-query`, { // Replace with your backend API endpoint
+      const response = await axios.post(`${apiClient}/query/submit-query`, {
         ...formData,
         cities: selectedCities
       });
@@ -62,7 +62,7 @@ const QueryForm: React.FC = () => {
     setSelectedCities([...selectedCities, '']);
   };
 
-  const handleCityChange = (index, value) => {
+  const handleCityChange = (index: number, value: string) => {
     const updatedCities = [...selectedCities];
     updatedCities[index] = value;
     setSelectedCities(updatedCities);

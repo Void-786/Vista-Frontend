@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import apiClient from "../../api/apiClient";
 import "../../styles/admin-car-list.css";
-// import token from "../../api/token";
 
 interface Car {
   id: string;

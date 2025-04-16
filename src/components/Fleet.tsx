@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/fleet.css';
 import FleetBookingForm from './FleetBookingForm';
-import CarCatalog from './CarCatalog';
 
 const Fleet: React.FC = () => {
   return (
@@ -18,8 +17,6 @@ const Fleet: React.FC = () => {
         <h2>Our Fleet Collection</h2>
         <p>Choose from our range of meticulously maintained vehicles, each offering a perfect blend of comfort, style, and performance.</p>
       </div>
-
-      <CarCatalog />
     </div>
   );
 };
