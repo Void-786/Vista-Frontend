@@ -80,9 +80,9 @@ const QueryForm: React.FC = () => {
       <div className="query-form-wrapper">
         <div className="form-background">
           <div className="background-images">
-            <img src="/src/assets/images/carousel/Varanasi-Ghats.jpg" alt="Varanasi Ghat" className="bg-image-1" />
+            {/* <img src="/src/assets/images/carousel/Varanasi-Ghats.jpg" alt="Varanasi Ghat" className="bg-image-1" />
             <img src="/src/assets/images/carousel/Haridwar-Rishikesh-Tour-package.jpg" alt="Rishikesh Adventure" className="bg-image-2" />
-            <img src="/src/assets/images/carousel/taj-photo-yamuna-river-scaled.webp" alt="Taj Mahal" className="bg-image-3" />
+            <img src="/src/assets/images/carousel/taj-photo-yamuna-river-scaled.webp" alt="Taj Mahal" className="bg-image-3" /> */}
           </div>
         </div>
         <div className="form-content">
