@@ -1,3 +1,3 @@
-const apiClient = "http://localhost:8807";
+const apiClient = "https://vista-backend-production.up.railway.app/";
 
 export default apiClient;
