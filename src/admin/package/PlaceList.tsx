@@ -141,7 +141,7 @@ const PlacesList: React.FC = () => {
                 type="file"
                 id="image"
                 onChange={(e) =>
-                  setEditPlace({ ...editPlace, image: e.target.files?.[0] || null })
+                  setEditPlace({ ...editPlace, image: e.target.files?.[0]})
                 }
               />
             </div>

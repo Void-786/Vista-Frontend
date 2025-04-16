@@ -170,7 +170,7 @@ const CarsList: React.FC = () => {
                 type="file"
                 id="image"
                 onChange={(e) =>
-                  setEditCar({ ...editCar, image: e.target.files?.[0] || null })
+                  setEditCar({ ...editCar, image: e.target.files?.[0]})
                 }
               />
             </div>
