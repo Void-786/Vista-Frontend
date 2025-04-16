@@ -88,7 +88,7 @@ const QueryForm: React.FC = () => {
         <div className="form-content">
           <div className="form-header">
             <div className="header-content">
-              <img src="/src/assets/images/carousel/PTI01-22-2024-000010B-0_1705901965915_1705919545381.webp" alt="Ram Temple" className="header-image" />
+              {/* <img src="/src/assets/images/carousel/PTI01-22-2024-000010B-0_1705901965915_1705919545381.webp" alt="Ram Temple" className="header-image" /> */}
               <h2 className="form-title">Submit Your <span>Query</span></h2>
             </div>
           </div>
