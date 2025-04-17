@@ -23,10 +23,6 @@ const QueryForm: React.FC = () => {
   const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Log the form data to the console before sending it
-    console.log("Form Data being sent:", formData);
-    console.log("Selected Cities being sent:", selectedCities);
-
     try {
       const response = await axios.post(`${apiClient}/query/submit-query`, {
         ...formData,
@@ -50,7 +46,7 @@ const QueryForm: React.FC = () => {
         setSelectedCities([]);
       } else {
         setSubmitStatus('error');
-        console.error("Form submission failed:", response.status, response.data); // Log more info
+        console.error("Form submission failed:", response.status);
       }
     } catch (error) {
       console.error("Error submitting form:", error);

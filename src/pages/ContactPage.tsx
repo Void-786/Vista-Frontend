@@ -32,7 +32,7 @@ const ContactPage: React.FC = () => {
         });
       } else {
         setSubmitStatus('error');
-        console.error("Form submission failed:", response.status, response.data);
+        console.error("Form submission failed:", response.status);
       }
     } catch (error) {
       console.error("Error submitting form:", error);

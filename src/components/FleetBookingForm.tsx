@@ -10,7 +10,6 @@ const FleetBookingForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log({ tripType, pickupCity, dropCity, phone });
   };
 
   return (
